@@ -1,0 +1,164 @@
+
+header, section {
+
+    position: relative;
+
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: black;
+
+}
+
+
+header {
+
+    animation: headerAnim 2s forwards;
+
+}
+
+@keyframes headerAnim {
+
+    0% {
+  
+      opacity: 0;
+  
+    }
+  
+    100% {
+  
+      opacity: 1;
+  
+    }
+  
+  }
+
+header hr {
+
+    width: 500px;
+    margin: 10px 0;
+
+}
+
+header span {
+
+    color: grey;
+    font-size: 30px;
+
+}
+
+
+header img, section img {
+
+    position: absolute;
+    
+
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+
+    max-width: 100%;
+    height: 100vh;
+    max-height: 100%;
+    
+    z-index: 0;
+
+}
+
+header h2, header hr, header span, section p, section h2, section h3, section h4 {
+
+    z-index: 2;
+
+}
+
+section p {
+
+    color: #f1f1f1;
+    font-size: 25px;
+    width: 800px;
+
+    line-height: 45px;
+
+}
+
+section h2, header h2 {
+
+    color: #56ADFF;
+    font-size: 45px;
+    text-align: center;
+
+}
+
+
+h3 {
+
+    color: #56ADFF;
+    font-size: 40px;
+    text-align: center;
+}
+
+.firstSeoSection p {
+
+margin: 25px;
+
+}
+
+.secondSeoSection {
+
+    justify-content: center;
+
+}
+
+.secondSeoSection h3 {
+
+align-self: flex-start;
+margin: 50px;
+
+   
+}
+
+.secondSeoSection img {
+
+    object-fit: cover;
+
+}
+
+.secondSeoSection p {
+
+    margin: 25px;
+
+    width: 700px;
+
+}
+
+.secondSeoSectionRowContainer {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-start;
+    flex-wrap: wrap;
+
+    z-index: 2;
+
+}
+
+
+/* _____________________________MEDIA QUERIES_______________________________ */
+
+@media screen and (max-width:900px) {
+
+    section img {
+
+        object-position: bottom right;
+
+    }
+
+}

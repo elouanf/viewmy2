@@ -1,0 +1,114 @@
+
+header {
+
+    position: relative;
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+    animation: headerAnim 2s forwards;
+
+}
+
+header img {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    max-height: 100%;
+
+    object-fit: cover;
+    object-position: bottom right;
+
+    z-index: 0;
+
+}
+
+header li {
+
+    z-index: 2;
+    color: white;
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 10px 0;
+
+}
+
+.contactColContainer {
+
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    padding: 10px;
+
+}
+
+.contactColContainer h2 {
+
+    color: #56ADFF;
+
+}
+
+.contactColContainer hr {
+
+    width: 100%;
+
+    margin: 15px 0;
+
+}
+
+.contactColContainer span {
+
+    margin: 0 10px;
+
+    font-size: 20px;
+   
+
+}
+
+header li img {
+
+    position: relative;
+
+    width: 40px;
+    height: 40px;
+    
+    z-index: 2;
+
+}
+@keyframes headerAnim {
+
+    0% {
+  
+      opacity: 0;
+  
+    }
+  
+    100% {
+  
+      opacity: 1;
+  
+    }
+  
+  }
