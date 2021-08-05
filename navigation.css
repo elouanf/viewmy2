@@ -221,17 +221,79 @@ section {
   
   }
 
+  .responsiveNav {
+
+    display: none;
+
+  }
 
 
 /* __________________________________MEDIA QUERIES____________________________________ */
 
-@media screen and (max-width:950px) {
+@media screen and (max-width:1080px) {
 
     nav {
 
         flex-direction: column;
+        justify-content: space-around;
+        background-color: #f1f1f1;
 
         width: 80%;
+        height: 100%;
+
+        transform: translateX(-100%);
+
+        transition: all 0.5s ease-in-out;
+    }
+
+    nav a {
+
+        color: black;
+        font-weight: bolder;
+
+    }
+
+    .responsiveNav {
+
+        display: block;
+
+        position: fixed;
+        
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        width: 100%;
+        min-height: 30px;
+        height: auto;
+        background-color: #f1f1f171;
+
+        z-index: 9;
+
+        transition: all 0.5s ease-in-out;
+    }
+
+    .active {
+
+        transform: translateX(0);
+
+    }
+
+    .responsiveNav button {
+
+        margin: 10px;
+
+        transition: all 0.5s ease-in-out;
+        
+        border: none;
+        background-color: transparent;
+    }
+
+    .responsiveActive {
+
+        justify-content: flex-end;
 
     }
 
@@ -239,6 +301,11 @@ section {
 }
 
 @media screen and (max-width:500px) {
+
+
+    
+
+    
 
     p {
 
@@ -260,6 +327,24 @@ section {
         font-size: 22px!important;
 
         font-weight: bold;
+
+    }
+
+
+}
+
+@media screen and (max-width:300px) {
+
+    nav a {
+
+        font-size: 17px;
+
+    }
+
+    nav a:hover {
+
+        background-color: #222;
+        color: white;
 
     }
 

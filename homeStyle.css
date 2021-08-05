@@ -19,6 +19,12 @@ header, section {
 
 }
 
+.logoHeader {
+
+    padding: 0 10px;
+
+}
+
 .logoHeader path, .logoHeader g {
 
     stroke-dasharray: 1000px;
@@ -190,19 +196,18 @@ section a:hover {
 
 /* __________________________________MEDIA QUERIES____________________________________ */
 
-@media screen and (max-width:1300px) {
-
-    .seoHomeSection svg{
-
-        width: 400px;
-        height: 400px;
-
-    }
-
-
-}
 
 @media screen and (max-width:900px) {
+
+    h1 {
+
+        font-size: 30px;
+
+        margin: 10px;
+        text-align: center;
+
+        line-height: 40px;
+    }
 
     .creationHomeSection {
 
@@ -222,5 +227,42 @@ section a:hover {
         object-position: unset;
 
     }
+    
+    .seoHomeSection svg{
+
+        width: 250px;
+        height: 400px;
+
+    }
+
+    .seoContainer {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+
+}
+
+@media screen and (max-width:500px) {
+
+
+    section:last-of-type img {
+
+        position: relative;
+        height: 50vh;
+        object-position: 20px;
+
+    }
+
+    section a {
+
+        font-size: 18px;
+
+    }
+
 
 }

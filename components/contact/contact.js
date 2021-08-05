@@ -1,30 +1,9 @@
-
-const topLink = document.querySelector('.goToTop');
-
-topLink.addEventListener('click', () => {
-
-
-    window.scrollTo(0, 0);
-
-
-})
-
-topLink.removeEventListener('click', () => {
-
-    
-
-});
-
-
-
 // __________________NAVIGATION____________________
 
 
 const navBar = document.querySelector('nav');
 const navButton = document.querySelector('.navButton');
 const responsiveNav = document.querySelector('.responsiveNav');
-
-const outClick = document.querySelector('.out');
 
 const navLink = document.querySelector('.navLink');
 
@@ -45,7 +24,7 @@ navLink.addEventListener('click', () => {
 
 
 
-});
+})
 
 
 outClick.addEventListener('click', () => {
