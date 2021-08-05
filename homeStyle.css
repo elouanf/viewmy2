@@ -83,6 +83,8 @@ h1 {
     color: white;
     font-size: 45px;
 
+    text-align: center;
+
 }
 
 section img {
@@ -252,9 +254,9 @@ section a:hover {
 
     section:last-of-type img {
 
-        position: relative;
-        height: 50vh;
-        object-position: 20px;
+       
+       object-fit: cover;
+      
 
     }
 
@@ -264,5 +266,11 @@ section a:hover {
 
     }
 
+    .seoHomeSection svg{
+
+        width: 250px;
+        height: 200px;
+
+    }
 
 }

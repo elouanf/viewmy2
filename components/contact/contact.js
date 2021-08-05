@@ -5,6 +5,8 @@ const navBar = document.querySelector('nav');
 const navButton = document.querySelector('.navButton');
 const responsiveNav = document.querySelector('.responsiveNav');
 
+const outClick = document.querySelector('.out');
+
 const navLink = document.querySelector('.navLink');
 
 

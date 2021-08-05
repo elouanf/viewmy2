@@ -112,3 +112,44 @@ header li img {
     }
   
   }
+
+
+
+
+
+  /* ________________________________MEDIA QUERIES_______________________________ */
+
+  @media screen and (max-width: 700px) {
+
+    header img {
+
+        object-position: 70%;
+
+    }
+
+
+
+  }
+
+  
+  @media screen and (max-width: 500px) {
+
+    .contactColContainer {
+
+        background-color: rgba(0, 0, 0, 0.8);
+
+    }
+
+    .contactColContainer span {
+
+        margin: 10px!important;
+        font-size: 18px!important;
+
+        text-align: center;
+    
+
+    }
+
+
+  }
+
