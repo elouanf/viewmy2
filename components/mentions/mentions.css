@@ -1,0 +1,48 @@
+section {
+
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+section ul {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    margin: 25px;
+
+    width: 600px;
+
+    max-width: 95%;
+
+}
+
+section ul:first-child li:first-child, section ul:last-child li:first-child {
+
+
+    color: #56ADFF;
+    font-size: 20px;
+    font-weight: bold;
+
+
+}
+
+section ul li {
+
+    color: #f1f1f1;
+
+    list-style-type: none;
+
+    font-size: 18px;
+}
